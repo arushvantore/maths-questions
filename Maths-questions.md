@@ -1,5 +1,5 @@
 # EVERY Maths question (portal, till now)
-Generated: 2026-10-24T00:20:29 by `scrape.py --export Maths`
+Generated: 2026-10-24T12:31:59 by `scrape.py --export Maths`
 
 For the AI tutor: teach these in due-date order. Status and
 XP are the student's real portal state. Question text is
@@ -36,11 +36,11 @@ Chapter 5: Divisibility, GCD/HCF, and LCM
 Chapter 6: Congruence, Modular Arithmetic, and the Euclidean Algorithm
 Problem-Solving Sheets: 1 and 2
 
-### Course textbooks (shared #m1-26, 2 Sep; download from Slack — files need your Slack login, so not mirrored here)
-- challenges and thrills of pre college mathematics
-- discrete mathematics and its applications 8e kenneth rosen 9781259676512
-- precalculus mathematics by james stewart
-- david burton - elementary number theory
+### Course textbooks (shared #m1-26, 2 Sep; all four downloaded locally to materials/slack-questions/sources/math/books/ — originals below need your Slack login, and the public site keeps only these links, not the copyrighted files)
+- challenges and thrills of pre college mathematics — https://files.slack.com/files-pri/T0BNJRD9QT1-F0BUGKJHAQL/download/challenges_and_thrills_of_pre_college_mathematics.pdf
+- discrete mathematics and its applications 8e kenneth rosen 9781259676512 — https://files.slack.com/files-pri/T0BNJRD9QT1-F0BUGLEBCKE/download/discrete_mathematics_and_its_applications_8e_kenneth_rosen_9781259676512.pdf
+- precalculus mathematics by james stewart — https://files.slack.com/files-pri/T0BNJRD9QT1-F0BUEU31DU1/download/precalculus_mathematics_by_james_stewart.pdf
+- david burton - elementary number theory — https://files.slack.com/files-pri/T0BNJRD9QT1-F0C6M996AMB/download/david_burton_-_elementary_number_theory.pdf
 
 ### Math-1 Contest 1 question paper (shared #m1-26, 25 Sep: M1_Contest_1_S_VYASA.pdf; full text extracted below — original needs Slack login)
 Original: https://files.slack.com/files-pri/T0BNJRD9QT1-F0C40DNKB7Z/download/m1_contest_1_s_vyasa.pdf
