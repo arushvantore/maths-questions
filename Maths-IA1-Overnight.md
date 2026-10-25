@@ -1,4 +1,6 @@
-# Maths IA-1 — OVERNIGHT SURVIVAL SHEET (one night only)
+# Maths IA-1 — THE ONLY SHEET (one night, one source, final)
+
+> **CLOSE EVERYTHING ELSE.** The Master Worksheet and the Do-or-Die sheet are retired — they were versions of this. THIS file is your entire night and your entire exam prep. It contains: schedule · 17 quick traps · 8 hard questions · 4 application questions · exam playbook · formula card. Nothing outside this file will help you more than what is inside it.
 ### Format-proof · marks-proof · twisted central-team level · target 70%+ · answers inline
 
 **FORMAT WARNING:** IA-1 layout is UNKNOWN and MARKS are UNKNOWN — the two contests ran differently, and the central team can change format AND weightage any time (MCQ, fill, matching, worded, long-working, any mix, any marks). So this sheet assumes NOTHING about the paper and trains two things only: **quick-mark traps** (become the short questions whatever they're called) and **hard working questions** (become the big questions whatever they're called and however many marks they carry).
@@ -13,10 +15,10 @@
 |---|---|---|
 | I | 22:00 – 00:30 | TIER 1 below: 17 quick-mark traps, answers as you go |
 | — | 00:30 – 00:50 | break: walk, water, food |
-| II | 00:50 – 03:20 | TIER 2: 8 hard questions, full steps |
-| III | 03:20 – 04:00 | re-solve EVERY wrong one with the answer covered |
-| IV | 04:00 – 05:00 | memorise FORMULA CARD + PLAYBOOK |
-| V | 05:00 – 06:00 | timed re-run of Tier 1, 20 min, zero errors |
+| II | 00:50 – 03:40 | TIER 2 (8 hard) + TIER 3 (4 applications), full steps |
+| III | 03:40 – 04:15 | re-solve EVERY wrong one with the answer covered |
+| IV | 04:15 – 05:15 | memorise FORMULA CARD + PLAYBOOK |
+| V | 05:15 – 06:15 | timed re-run of Tier 1, 20 min, zero errors |
 | VI | 06:00 – 06:45 | timed re-run of 5 best Tier 2, 30 min |
 | VII | 06:45 – exam time | formula card final glance, get ready, leave early |
 
@@ -109,7 +111,28 @@
 
 ---
 
-# PLAYBOOK — extracting 25 marks from an unpredictable, confusing paper
+---
+
+# TIER 3 — 4 application questions (central teams LOVE worded problems)
+
+*Same rule: given → formula → steps → answer → one sentence of meaning.*
+
+**T1. (algebra → quadratic)** A garden is 5 m longer than wide; area 36 m². Dimensions? Then same garden widened to 40 m² — new width?
+→ w(w + 5) = 36 → w² + 5w − 36 = 0 → (w + 9)(w − 4) = 0 → **w = 4 m, l = 9 m** (reject −9)
+→ w² + 5w − 40 = 0 → w = (−5 + √185)/2 ≈ **4.3 m** (√185 ≈ 13.60)
+
+**T2. (inequality chain)** IQ = MA/CA × 100. Children aged 15 with 90 ≤ IQ ≤ 150 — mental age range?
+→ MA = IQ × 15/100 → 90→13.5, 150→22.5 → **13.5 ≤ MA ≤ 22.5 years**
+
+**T3. (rocket — the full 4-mark shape)** h(t) = −5t² + 20t + 25: (i) zeros (ii) max height without calculus (iii) h(6) = −35 — "35 m underground"?
+→ (i) −5(t − 5)(t + 1) → **t = 5 s** (t = −1 rejected: time ≥ 0)
+→ (ii) vertex t = −b/2a = 2 → h(2) = −20 + 40 + 25 = **45 m**
+→ (iii) **NO** — formula is only valid during flight; t = 6 s is past landing, negative height is extrapolation outside the model
+
+**T4. (log application)** pH = −log₁₀[H⁺]. A: [H⁺] = 10⁻³, B: 10⁻⁴·⁵. Which more acidic, by how much?
+→ pH A = 3, pH B = 4.5 → lower pH = more acidic → **A more acidic by 1.5 pH units**
+
+# PLAYBOOK — extracting 70% from an unpredictable, confusing, unknown-marks paper
 
 **Universal order (90 min):**
 1. **First 5 min:** read the WHOLE paper, note what formats exist today (they differ!), count marks per part. No solving yet.
@@ -147,4 +170,4 @@
 
 ---
 
-**Two tiers. One night. Whatever the paper asks — follow the clock.**
+**This is the whole plan. Tiers 1-2-3 in order, then playbook, then formula card. Nothing else exists tonight.**
