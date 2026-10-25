@@ -1,6 +1,6 @@
 # Maths IA-1 — THE ONLY SHEET (one night, one source, final)
 
-> **CLOSE EVERYTHING ELSE.** The Master Worksheet and the Do-or-Die sheet are retired — they were versions of this. THIS file is your entire night and your entire exam prep. It contains: schedule · 17 quick traps · 8 hard questions · 4 application questions · exam playbook · formula card. Nothing outside this file will help you more than what is inside it.
+> **CLOSE EVERYTHING ELSE.** The Master Worksheet and the Do-or-Die sheet are retired — they were versions of this. THIS file is your entire night and your entire exam prep. It contains: schedule · 27 quick traps · 8 hard questions · 4 application questions · exam playbook · formula card. Nothing outside this file will help you more than what is inside it.
 ### Format-proof · marks-proof · twisted central-team level · target 70%+ · answers inline
 
 **FORMAT WARNING:** IA-1 layout is UNKNOWN and MARKS are UNKNOWN — the two contests ran differently, and the central team can change format AND weightage any time (MCQ, fill, matching, worded, long-working, any mix, any marks). So this sheet assumes NOTHING about the paper and trains two things only: **quick-mark traps** (become the short questions whatever they're called) and **hard working questions** (become the big questions whatever they're called and however many marks they carry).
@@ -13,7 +13,7 @@
 
 | Block | Time | Do |
 |---|---|---|
-| I | 22:00 – 00:30 | TIER 1 below: 17 quick-mark traps, answers as you go |
+| I | 22:00 – 00:30 | TIER 1 below: 27 quick-mark traps, answers as you go |
 | — | 00:30 – 00:50 | break: walk, water, food |
 | II | 00:50 – 03:40 | TIER 2 (8 hard) + TIER 3 (4 applications), full steps |
 | III | 03:40 – 04:15 | re-solve EVERY wrong one with the answer covered |
@@ -24,7 +24,7 @@
 
 ---
 
-# TIER 1 — 17 quick-mark traps (these ARE the safe marks in any format)
+# TIER 1 — 27 quick-mark traps (these ARE the safe marks in any format)
 
 *Each one is designed to be asked as MCQ, fill-in, match-pair or 2-mark short. Learn the trap, not the shape.*
 
@@ -78,6 +78,17 @@
 
 17. **MATCH SET:** a) x + 1/x = 3 → x² + 1/x² · b) lcm(12,18) · c) 100 mod 7 · d) log₉ 27 · e) divisors of 60 — against: 7 / 36 / 2 / 3/2 / 12
 → **a-7 · b-36 · c-2 · d-3/2 · e-12**
+
+18. **Complete the square:** x² − 8x + 5 → **(x − 4)² − 11** (halve −8, square 16, subtract back)
+19. **Euclidean algorithm:** gcd(1071, 462) with steps → 1071 = 2×462 + 147; 462 = 3×147 + 21; 147 = 7×21 + 0 → **21** (steps ARE the marks)
+20. **Counting:** integers 1–100 divisible by 6 OR by 8 → 16 + 12 − 4 = **24** (inclusion–exclusion: ⌊100/6⌋, ⌊100/8⌋, ⌊100/24⌋)
+21. **For all x:** find k so x² + 2x + k > 0 for EVERY real x → D = 4 − 4k < 0 → **k > 1** (note k = 1 fails: x = −1 gives 0)
+22. **Factorise fully:** x⁴ − 16 → **(x − 2)(x + 2)(x² + 4)** (difference of squares TWICE)
+23. **Exponent rules:** 2³ · 2⁵ ÷ 2⁴ = → **2⁴ = 16** (add exponents, subtract on division)
+24. **Log laws:** express log 45 using log 3 and log 5 → **2 log 3 + log 5** (45 = 9 × 5)
+25. **Log definition:** if 2ˣ = 7 then x = → **log₂ 7** (= log 7 / log 2, change of base)
+26. **gcd × lcm:** gcd(a,b) = 8, lcm(a,b) = 96, a = 24 → b = → **32** (b = 96×8 ÷ 24)
+27. **Worded LCM:** buses leave every 15 min and 20 min, both at 8:00 → next together at → **9:00** (lcm = 60)
 
 ---
 
