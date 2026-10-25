@@ -1,6 +1,6 @@
 # Maths IA-1 — THE ONLY SHEET (one night, one source, final)
 
-> **CLOSE EVERYTHING ELSE.** This file is your entire night and your entire exam prep: schedule · 27 quick traps · 8 hard questions · 4 applications · playbook · formula card. Every question now has: **TRIGGER** (how the paper signals this type) · **STEPS** (full solution) · **REMEMBER** (the line that scores the mark).
+> **CLOSE EVERYTHING ELSE.** This file is your entire night and your entire exam prep: schedule · 27 quick traps · 8 hard questions · 4 applications · playbook · formula card. Every question now has: **CONCEPT (from zero)** (the idea taught from scratch, no prior knowledge needed) · **TRIGGER** (how the paper signals this type) · **STEPS** (full solution) · **REMEMBER** (the line that scores the mark).
 
 ---
 
@@ -22,136 +22,163 @@
 # TIER 1 — 27 quick-mark traps (the safe marks in ANY format)
 
 **1.** If a < b, which need NOT be true? (a) a−3 < b−3 (b) −4a > −4b (c) a² < b² (d) 3a < 3b
+- **CONCEPT (from zero):** Inequality basics: a < b = a is smaller. Adding the same thing to both sides keeps the order; MULTIPLYING by a negative REVERSES it; squaring keeps order only when both sides share a sign.
 - **TRIGGER:** wording "need NOT"/"always" → test with a = −5, b = 1
 - **STEPS:** (a) −8 < −2 ✓ · (b) 20 > −4 ✓ (flip works) · (c) 25 < 1 ✗ FALSE → answer **(c)** · (d) −15 < 3 ✓
 - **REMEMBER:** × negative flips, × positive keeps, **squaring breaks order when signs differ**
 
 **2.** log₂(x − 1) = 3 → x = ?
+- **CONCEPT (from zero):** What a log IS: log₂(x) asks "2 to what power gives x?" So log₂(x−1)=3 is just the sentence 2³ = x−1. Undo the log by writing it as a power.
 - **TRIGGER:** log of an expression = number → drop the log first
 - **STEPS:** x − 1 = 2³ = 8 → x = **9**
 - **REMEMBER:** undo log BEFORE touching the +1; **8 is the bait answer**
 
 **3.** x² + (k − 3)x + k = 0 has equal roots → sum of possible k = ? product = ?
+- **CONCEPT (from zero):** Discriminant: for ax²+bx+c=0, D = b²−4ac counts roots — D>0 two, D=0 exactly ONE (equal roots), D<0 none. Every 'equal roots / touches axis' question = set D = 0 and solve the new equation.
 - **TRIGGER:** "equal roots" / "touches the axis once"
 - **STEPS:** D = (k−3)² − 4k = 0 → k² − 6k + 9 − 4k = k² − 10k + 9 = 0 → k = 1, 9 → sum = **10**, product = **9**
 - **REMEMBER:** D = 0 engine; **underline sum vs product BEFORE solving**
 
 **4.** Solution of (x − 3)/(x + 1) < 0 →
+- **CONCEPT (from zero):** Sign chart: a fraction is negative when top and bottom have OPPOSITE signs. Mark where top=0 (3) and bottom=0 (−1), split the number line, test one value per region.
 - **TRIGGER:** rational < 0 → numerator and denominator opposite signs → between the roots
 - **STEPS:** roots −1 and 3 → test x = 0: (−3)/(1) = −3 < 0 ✓ inside → **−1 < x < 3**, x ≠ −1
 - **REMEMBER:** denominator point NEVER included; no flip ever happens here
 
 **5.** Digits of 2¹⁰⁰ (log 2 = 0.3010) →
+- **CONCEPT (from zero):** Digits & logs: log₁₀(N) = '10 to what power = N'. If log N = 30.10, N sits strictly between 10³⁰ and 10³¹ → it has 31 digits. That's the whole digits rule.
 - **TRIGGER:** "how many digits"
 - **STEPS:** log(2¹⁰⁰) = 30.10 → ⌊30.10⌋ + 1 = **31**
 - **REMEMBER:** digits = ⌊log N⌋ + 1 — the **+1** is the whole question
 
 **6.** Last two digits of 7²⁰⁰ →
+- **CONCEPT (from zero):** Mod 100 = last two digits. Instead of giant multiplication, find a small power of the base ending in 01, then raise THAT to whatever's left. 7⁴ = 2401 ends in 01.
 - **TRIGGER:** "last two digits" → mod 100
 - **STEPS:** 7⁴ = 2401 ≡ 01 (mod 100) → 7²⁰⁰ = (7⁴)⁵⁰ ≡ 1⁵⁰ = **01**
 - **REMEMBER:** memorise hero 7⁴ ≡ 01 — one line, full marks
 
 **7.** gcd(a,b) = 12, lcm(a,b) = 120 → ordered pairs (a,b) = ?
+- **CONCEPT (from zero):** gcd = largest number dividing BOTH; lcm = smallest number BOTH divide into. Law: a·b = gcd × lcm ALWAYS. If gcd is 12, both numbers are 12×(something).
 - **TRIGGER:** gcd AND lcm both given → pull the gcd out
 - **STEPS:** a = 12x, b = 12y with xy = 10 and gcd(x,y) = 1 → (1,10)(2,5)(5,2)(10,1) → **4**
 - **REMEMBER:** divide both by the gcd first, then coprime-factor the rest
 
 **8.** "All multiples of 4 are even. 12 is even. So 12 is a multiple of 4." Why invalid?
+- **CONCEPT (from zero):** Logic: 'All multiples of 4 are even' + '12 is even' does NOT prove 12 is a multiple of 4 — the property 'even' belongs to non-members too (6). To break such reasoning, produce ONE counterexample.
 - **TRIGGER:** "reasoning incorrect/flawed" → find counterexample
 - **STEPS:** 6 is even but not a multiple of 4 → the conclusion doesn't follow → **(b)**
 - **REMEMBER:** going backwards from a property needs proof, not vibes — cite the counterexample
 
 **9.** |x| = −x exactly when →
+- **CONCEPT (from zero):** Absolute value = distance from 0. |x| = x when x≥0, and |x| = −x when x<0. So |x| = −x is the official identity exactly when x ≤ 0 (0 included — 0 = −0).
 - **TRIGGER:** absolute value equals its negative
 - **STEPS:** x = 0: 0 = 0 ✓; x < 0: |x| = −x ✓; x > 0: x = −x ✗ → **x ≤ 0**
 - **REMEMBER:** **0 is included** — trap answer is x < 0
 
 **10.** x + 1/x = 4 → x³ + 1/x³ = ?
+- **CONCEPT (from zero):** Cubic identity: (x + 1/x)³ expands to x³ + 1/x³ + 3(x + 1/x). This whole family (squares, cubes of x±1/x) is ONE memorised expansion reused everywhere.
 - **TRIGGER:** x + 1/x given, higher power asked
 - **STEPS:** (x+1/x)³ = x³ + 1/x³ + 3(x+1/x) → 64 = ans + 12 → **52**
 - **REMEMBER:** cube formula subtracts **3×(the given)**, not 3
 
 **11.** log₅ 125 + log₂ 32 − log₁₀ 10000 = ?
+- **CONCEPT (from zero):** Log of a power: log₅125 = '5 to what power = 125' → 3. Convert every log term into its plain power first, then do arithmetic.
 - **TRIGGER:** logs of exact powers → convert to exponents
 - **STEPS:** 5³=125→3 · 2⁵=32→5 · 10⁴=10000→4 → 3 + 5 − 4 = **4**
 - **REMEMBER:** rewrite each as "to what power" — arithmetic then trivial
 
 **12.** Remainder of 10¹⁰ ÷ 7 = ?
+- **CONCEPT (from zero):** Remainder cycles: powers repeat their remainders mod n. Find the smallest e with aᵉ ≡ 1 (mod n), then cut the big exponent down with ÷ e.
 - **TRIGGER:** big power remainder → reduce base, find cycle
 - **STEPS:** 10 ≡ 3 (mod 7); 3⁶ = 729 ≡ 1; 10 = 6×1 + 4 → 3⁴ = 81 = 7×11 + 4 → **4**
 - **REMEMBER:** reduce base first, then exponent mod cycle length (6 here)
 
 **13.** Divisors of 360 = ?
+- **CONCEPT (from zero):** Divisor counting: in pᵉ the prime can be used 0,1,…,e times → (e+1) choices. Multiply choices of all primes. Never count divisors by hand.
 - **TRIGGER:** "number of divisors" → prime-factorise
 - **STEPS:** 360 = 2³·3²·5 → (3+1)(2+1)(1+1) = **24**
 - **REMEMBER:** τ = product of (exponent + 1) — always +1
 
 **14.** (x − 2) divides x³ − kx² + 10x − 8 exactly → k = ?
+- **CONCEPT (from zero):** Factor theorem: if (x−a) divides a polynomial with no remainder, substituting x = a makes it exactly 0. Plug in, get an equation, solve for the unknown.
 - **TRIGGER:** "(x − a) divides/exactly" → factor theorem
 - **STEPS:** f(2) = 8 − 4k + 20 − 8 = 0 → 20 − 4k = 0 → k = **5**
 - **REMEMBER:** plug the ROOT (sign flips: x−2=0 → x=+2), set whole thing = 0
 
 **15.** 4^(x+1) = 8^x → x = ?
+- **CONCEPT (from zero):** Same-base rule: 2^X = 2^Y only when X = Y (2^x never gives the same output twice). So rewrite BOTH sides with the smallest common base, then equate exponents.
 - **TRIGGER:** power = power → make bases SAME
 - **STEPS:** 2^(2x+2) = 2^(3x) → 2x + 2 = 3x → x = **2**
 - **REMEMBER:** bases equal ⟹ exponents equal — never subtract bases
 
 **16.** Product of roots of 3x² − 7x + 2 = 0 →
+- **CONCEPT (from zero):** Vieta's formulas: (x−α)(x−β) = x² − (α+β)x + αβ → sum of roots = −b/a, product = c/a. Lets you answer root questions WITHOUT finding roots.
 - **TRIGGER:** roots asked WITHOUT solving → Vieta's formulas
 - **STEPS:** product = c/a = **2/3** (sum would be 7/3)
 - **REMEMBER:** product = c/a, sum = −b/a — sign is the trap
 
 **17.** MATCH: a) x+1/x=3 → x²+1/x² · b) lcm(12,18) · c) 100 mod 7 · d) log₉27 · e) divisors of 60 — vs 7 / 36 / 2 / 3/2 / 12
+- **CONCEPT (from zero):** Matching: each pair is independent 10-second math. Do the pairs you recognise first, lock them, then attempt the rest — never let one hard pair block five easy ones.
 - **TRIGGER:** matching → solve each pair INDEPENDENTLY, never chain
 - **STEPS:** a) 9 − 2 = **7** · b) **36** · c) 100 = 14×7 + 2 → **2** · d) 9^{3/2}=27 → **3/2** · e) 2²·3·5 → 2·2·2 = **12**
 - **REMEMBER:** pair-by-pair, lock the confident 3 first
 
 **18.** Complete the square: x² − 8x + 5 →
+- **CONCEPT (from zero):** Complete the square: x² + bx = (x + b/2)² − (b/2)². Halve the middle coefficient, square it, subtract it back. This is how vertex/max is found without calculus.
 - **TRIGGER:** "write in the form (x + p)² + q"
 - **STEPS:** half of −8 = −4 → (x − 4)² − 16 + 5 = **(x − 4)² − 11**
 - **REMEMBER:** halve, square, SUBTRACT what you added
 
 **19.** gcd(1071, 462) with Euclidean steps →
+- **CONCEPT (from zero):** Euclidean algorithm: to gcd(a,b) — divide a by b, keep remainder; slide: (a,b) → (b, remainder); repeat until remainder = 0; the LAST non-zero remainder is the gcd.
 - **TRIGGER:** "use Euclidean algorithm" / big numbers
 - **STEPS:** 1071 = 2×462 + 147 → 462 = 3×147 + 21 → 147 = 7×21 + 0 → **21**
 - **REMEMBER:** write every division line — the steps are the marks, answer alone ≈ half credit
 
 **20.** Integers 1–100 divisible by 6 OR by 8 →
+- **CONCEPT (from zero):** Inclusion–exclusion: counting 'A or B' → count A + count B − overlap (else double-counted). And ⌊100/k⌋ counts multiples of k up to 100 (divide, ignore fraction).
 - **TRIGGER:** "or" in counting → inclusion–exclusion
 - **STEPS:** ⌊100/6⌋ = 16, ⌊100/8⌋ = 12, ⌊100/24⌋ = 4 → 16 + 12 − 4 = **24**
 - **REMEMBER:** |A| + |B| − |A∩B| — subtracting the double-count IS the question
 
 **21.** Find k so x² + 2x + k > 0 for EVERY real x →
+- **CONCEPT (from zero):** Always-positive parabola: upward parabola never touching 0 ⟺ D < 0. D = 0 would touch (=0 at one point) which breaks strict >0 — that's why k=1 fails.
 - **TRIGGER:** "for all real x" / "always positive"
 - **STEPS:** need D < 0 and open-up: 4 − 4k < 0 → **k > 1**
 - **REMEMBER:** strict — k = 1 fails (x = −1 gives exactly 0, not > 0)
 
 **22.** Factorise fully: x⁴ − 16 →
+- **CONCEPT (from zero):** Difference of squares: A² − B² = (A − B)(A + B). Apply again if a piece still looks like a square — x⁴ = (x²)². Stop when nothing is a difference of squares.
 - **TRIGGER:** "fully" → apply difference of squares until it stops
 - **STEPS:** x⁴ − 16 = (x²)² − 4² = (x²−4)(x²+4) = **(x−2)(x+2)(x²+4)**
 - **REMEMBER:** x² + 4 never factors over reals — stop there
 
 **23.** 2³ · 2⁵ ÷ 2⁴ = →
+- **CONCEPT (from zero):** Exponent laws: same base only — multiply → ADD powers, divide → SUBTRACT powers. The base itself never gets multiplied.
 - **TRIGGER:** same base, × ÷ → add/subtract exponents
 - **STEPS:** 3 + 5 − 4 = 4 → 2⁴ = **16**
 - **REMEMBER:** never multiply the bases — only the powers move
 
 **24.** Express log 45 using log 3 and log 5 →
+- **CONCEPT (from zero):** Log laws: log(A·B) = log A + log B · log(A/B) = log A − log B. To express log 45, factor 45 into pieces you know: 45 = 9 × 5 = 3²·5.
 - **TRIGGER:** "in terms of" → factorise the number
 - **STEPS:** 45 = 9 × 5 = 3²·5 → 2 log 3 + log 5
 - **REMEMBER:** split the NUMBER, not the log
 
 **25.** If 2ˣ = 7 then x = →
+- **CONCEPT (from zero):** Log = translation: aᵇ = c and b = log_a c are the SAME fact written two ways. Base of the log = base of the power, always, no exceptions.
 - **TRIGGER:** exponential given, log form asked
 - **STEPS:** aᵇ = c ⟺ b = log_a c → x = **log₂ 7** (or log 7 / log 2)
 - **REMEMBER:** base of log = base of power, always
 
 **26.** gcd(a,b) = 8, lcm(a,b) = 96, a = 24 → b = ?
+- **CONCEPT (from zero):** Why gcd×lcm = a·b: write a = g·x, b = g·y with x,y coprime. lcm = g·x·y. Then a·b = gx·gy and g·lcm = g·gxy — identical. That's the proof, memory-friendly.
 - **TRIGGER:** three of the four gcd/lcm quantities → product rule
 - **STEPS:** a·b = gcd·lcm → 24·b = 8×96 = 768 → b = **32**
 - **REMEMBER:** gcd × lcm = a × b — the one law that binds them
 
 **27.** Buses leave every 15 min and 20 min, both at 8:00 → next together at?
+- **CONCEPT (from zero):** Together vs gaps: events repeating every 15 and 20 min happen together at multiples of BOTH → LCM of intervals. 'Next time together' is ALWAYS an LCM question.
 - **TRIGGER:** "next time together" → LCM of the intervals
 - **STEPS:** lcm(15, 20) = 60 → 8:00 + 60 min = **9:00**
 - **REMEMBER:** together = LCM, ever-decreasing gaps = HCF — never mix them
@@ -163,41 +190,49 @@
 *Full-mark rule: GIVEN → FORMULA → STEPS → ANSWER → one sentence of meaning.*
 
 **H1.** Last two digits of 31³¹.
+- **CONCEPT (from zero):** Binomial split: (30+1)³¹ expands term by term; every term after 1 + 31×30 contains 30² = 900 → vanishes mod 100. So only the first two terms survive.
 - **TRIGGER:** last two digits of a NON-8-or-7 base → binomial split
 - **STEPS:** 31 = 30 + 1 → (30+1)³¹ = 1 + 31×30 + terms with 30² = 900 ≡ 0 (mod 100) → 1 + 930 = 931 → **31**
 - **REMEMBER:** split into (tens + ones); everything with 30² dies mod 100
 
 **H2.** Prove n⁴ − n² divisible by 12 for every integer n.
+- **CONCEPT (from zero):** Composite divisibility: to prove ÷12, prove ÷3 and ÷4 separately (coprime parts). Consecutive integers (n−1)n(n+1) always contain a multiple of 3 and rich even factors.
 - **TRIGGER:** "prove divisible by" → factorise into consecutive products
 - **STEPS:** n²(n−1)(n+1): (n−1)n(n+1) gives a factor 3; n even → n² gives 4, n odd → two even neighbours give 4 → divisible by 3 AND 4, coprime → **12 ∎**
 - **REMEMBER:** split the divisor (12 = 3 × 4) and prove each part separately
 
 **H3.** Greatest number dividing 552, 967, 1032 leaving the SAME remainder?
+- **CONCEPT (from zero):** Same-remainder logic: if N divides each number leaving remainder r, then N divides every DIFFERENCE (the r's cancel). So N = gcd of the differences — then verify remainders.
 - **TRIGGER:** "same remainder" → gcd of DIFFERENCES
 - **STEPS:** differences 415, 65, 480 → Euclid(415,65): 415 = 6×65+25 → 65 = 2×25+15 → 25 = 15+10 → 15 = 10+5 → **5**; check 552=110×5+2, 967=193×5+2, 1032=206×5+2 all leave 2 ✓
 - **REMEMBER:** answer is gcd(differences) — **always verify remainders match** (that check is one mark)
 
 **H4.** Same distance upstream in 4 h as downstream in 2 h; stream 3 km/h. Boat speed & distance?
+- **CONCEPT (from zero):** Uniform motion: distance = speed × time. Two trips of the SAME distance → two expressions set equal. With-stream adds current speed, against-stream subtracts it.
 - **TRIGGER:** two trips, same distance → set the products equal
 - **STEPS:** 4(b − 3) = 2(b + 3) → 4b − 12 = 2b + 6 → 2b = 18 → b = **9 km/h**; distance = 4 × 6 = **24 km**; check 2 × 12 = 24 ✓
 - **REMEMBER:** with-stream = +, against = −; **write the check line**
 
 **H5.** Solve log x + log(x + 3) = 1.
+- **CONCEPT (from zero):** Log equations: logs exist only for positive inputs. Combine logs → get a quadratic → solve → then DISCARD roots violating the domain. The discard line is a mark.
 - **TRIGGER:** logs added → combine → solve quadratic → DOMAIN CHECK
 - **STEPS:** log[x(x+3)] = 1 → x² + 3x = 10 → x² + 3x − 10 = 0 → (x+5)(x−2) = 0 → x = −5 or 2; need x > 0 → **x = 2**
 - **REMEMBER:** rejection line scores a mark — "x = −5 rejected, log undefined for x < 0"
 
 **H6.** Solve 5x ≡ 3 (mod 8).
+- **CONCEPT (from zero):** Modular inverse: a·A ≡ 1 (mod m) — A undoes a. Multiply both sides of the congruence by A to isolate x. Try small odd numbers until a·A = 1 + multiple of m.
 - **TRIGGER:** linear congruence → need the inverse
 - **STEPS:** 5×5 = 25 ≡ 1 (mod 8) → multiply both sides by 5: x ≡ 15 ≡ 7 → **x ≡ 7 (mod 8)**
 - **REMEMBER:** find what multiplies to ≡ 1 — try small numbers: 1,3,5,7 (odd residues are self-inverse here)
 
 **H7.** Four bells toll together at noon, then every 6, 8, 12, 15 s. Together how many times in 1 hour including start?
+- **CONCEPT (from zero):** LCM counting: first simultaneous moment = LCM; then every LCM-interval it repeats. Count how many fit in the window — add 1 if the start moment counts too.
 - **TRIGGER:** "together" + intervals → LCM + count including t = 0
 - **STEPS:** lcm(6,8,12,15) = 120 s → 3600 ÷ 120 = 30 → +1 for the start = **31**
 - **REMEMBER:** decide inclusion explicitly ("including the start") — +1 or not is the mark
 
 **H8.** Sum of a number and its reciprocal is 10/3. Find it.
+- **CONCEPT (from zero):** Reciprocal equations: multiply by the denominator to clear fractions → standard quadratic. Check: reciprocal answers come in pairs (3 and 1/3).
 - **TRIGGER:** "sum of a number and its reciprocal" → clear fractions
 - **STEPS:** x + 1/x = 10/3 → 3x² − 10x + 3 = 0 → (3x−1)(x−3) = 0 → x = 3 or 1/3 → **both**
 - **REMEMBER:** word problems can have TWO answers — give both, don't pick
@@ -207,21 +242,25 @@
 # TIER 3 — 4 application questions (central teams LOVE worded problems)
 
 **T1.** Garden is 5 m longer than wide; area 36 m². Dimensions? Widened to 40 m² → width?
+- **CONCEPT (from zero):** Word → algebra: define ONE variable for the unknown dimension, translate each phrase ("5 m longer" → +5), area = product, expand to quadratic = 0, reject negative lengths in words.
 - **TRIGGER:** area word problem → quadratic
 - **STEPS:** w(w+5) = 36 → w² + 5w − 36 = 0 → (w+9)(w−4) = 0 → w = **4 m, l = 9 m** (reject −9); then w² + 5w − 40 = 0 → w = (−5 + √185)/2 ≈ **4.3 m**
 - **REMEMBER:** reject the negative length in a sentence, every time
 
 **T2.** IQ = MA/CA × 100. Age 15, 90 ≤ IQ ≤ 150 → mental-age range?
+- **CONCEPT (from zero):** Formula + inequality: the formula maps values linearly, so it maps the ENDPOINTS of an IQ range directly — substitute 90 and 150, keep the inequality direction.
 - **TRIGGER:** chained inequality with a formula
 - **STEPS:** MA = IQ × 15/100 → 90→13.5, 150→22.5 → **13.5 ≤ MA ≤ 22.5 years**
 - **REMEMBER:** substitute the ENDPOINTS only — inequalities map to endpoints
 
 **T3.** h(t) = −5t² + 20t + 25: (i) zeros (ii) max height no calculus (iii) h(6) = −35 — "35 m underground"?
+- **CONCEPT (from zero):** Physics quadratics: roots = when height = 0 (keep the non-negative root), vertex t = −b/2a = max height, and the model is ONLY valid during its time window — beyond it, numbers lose meaning.
 - **TRIGGER:** physics worded quadratic → always interpret in context
 - **STEPS:** (i) −5(t−5)(t+1) → t = **5 s** (reject −1: time ≥ 0) · (ii) t = −b/2a = 2 → h(2) = 45 → **45 m** · (iii) **NO** — formula valid only during flight; t = 6 is past landing, negative height is model extrapolation
 - **REMEMBER:** interpretation questions need a full SENTENCE — the "why" is the mark
 
 **T4.** pH = −log₁₀[H⁺]. A: 10⁻³, B: 10⁻⁴·⁵. Which more acidic, by how much?
+- **CONCEPT (from zero):** Logs in formulas: definition given in the question = instructions. Substitute directly (−log of 10⁻³ = 3), then comparison = subtraction + a sentence about direction.
 - **TRIGGER:** log in a real formula → compute both, then COMPARE
 - **STEPS:** pH A = 3, pH B = 4.5 → lower pH = more acidic → **A by 1.5 units**
 - **REMEMBER:** state direction ("lower pH is more acidic") — comparison needs reasoning, not just numbers
