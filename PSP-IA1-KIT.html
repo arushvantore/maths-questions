@@ -1,0 +1,1061 @@
+<!doctype html><html><head><meta charset='utf-8'><title>PSP-IA1-KIT</title><style>
+body{font-family:-apple-system,'Helvetica Neue',Arial,sans-serif;font-size:10.5pt;
+line-height:1.45;color:#16181d;margin:0;padding:26px 30px;}
+h1.doc-title{font-size:20pt;margin:0 0 8px;}
+h2{font-size:15pt;color:#0b3d91;margin-top:8px;border-bottom:2px solid #0b3d91;
+padding-bottom:4px;page-break-after:avoid;}
+h3{font-size:12pt;margin:14px 0 6px;page-break-after:avoid;}
+hr{border:0;border-top:1px solid #ccc;margin:16px 0;}
+ul{margin:4px 0 10px 18px;padding:0}
+li{margin:3px 0;word-wrap:break-word}
+p{margin:5px 0}
+p.gap{margin:0;min-height:2px}
+pre{background:#f4f6f8;border:1px solid #dfe3e8;border-radius:6px;
+padding:9px 11px;font-size:8.8pt;white-space:pre-wrap;word-wrap:break-word;
+font-family:'SF Mono',Menlo,Consolas,monospace;page-break-inside:avoid;}
+code{background:#eef1f4;border-radius:3px;padding:0 3px;font-size:9.5pt;
+font-family:'SF Mono',Menlo,Consolas,monospace;}
+@page{size:A4;margin:14mm 12mm 16mm;}
+@media print{body{font-size:9.3pt} h2{page-break-before:always}
+h2:first-of-type{page-break-before:avoid} pre{font-size:7.8pt}}
+</style></head><body><h1 class='doc-title'>PSP (PYTHON FOR PROBLEM SOLVING) — IA-1 EXAM KIT</h1>
+<p class='gap'></p>
+<p><strong>Exam: Wednesday 29 October 2026</strong> (per student; no separate date announcement was in the Slack dumps).</p>
+<p><strong>Generated:</strong> 2026-10-28 · <strong>Batch:</strong> S1 B&#x27;26-CS B (PSP B)</p>
+<p><strong>Sources:</strong> portal export <code>PSP-questions.md</code> (100 assignments, 9 quizzes, 14 lecture windows, Slack sheets, 47-question workbook — captured 23 Oct), live portal pages captured 28 Oct (47/67 assignments solved, 3/9 quizzes), Slack dumps <code>academic-announcement-26.md</code> / <code>psp-26.md</code> (to 23 Oct), syllabus announcement 14 Oct.</p>
+<p><strong>Everything below is from those sources or standard Python — nothing invented.</strong></p>
+<p class='gap'></p>
+</section><hr>
+<p class='gap'></p>
+<section><h2>PART 0 — EXAM CARD (read first, 3 minutes)</h2>
+<p class='gap'></p>
+<h3>Syllabus — VERBATIM from the 14 Oct announcement (&quot;Syllabus for IA-1 PSP&quot;)</h3>
+<p class='gap'></p>
+<p>| # | Announcement line |</p>
+<p>|---|---|</p>
+<p>| L1 | Lecture - 1 Outline (Flowcharts) |</p>
+<p>| L2 | Lecture - 2 Outline (Variable, Datatype, Typecasting) |</p>
+<p>| L3 | Lecture - 3 Outline (Input, Arithmetic operator) |</p>
+<p>| L4 | Lecture - 4 Outline (if else) |</p>
+<p>| L5 | Lecture - 5 Outline (if else ladder) |</p>
+<p>| L6 | Lecture - 6 Outline (Nested if else) |</p>
+<p>| L7 | Lecture - 7 Outline (Introduction to Function) |</p>
+<p>| L8 | Lecture - 8 Outline (Function with if else) |</p>
+<p>| L9 | Lecture - 9 Outline (Logical operators, Function with nested if-else) |</p>
+<p>| L10 | Lecture - 10 Outline (Function with recursive thinking) |</p>
+<p>| L11 | Lecture - 11 Outline (For loop) |</p>
+<p>| L12 | Lecture - 12 Outline (While loop) |</p>
+<p class='gap'></p>
+<h3>What is confirmed / not confirmed</h3>
+<p class='gap'></p>
+<ul>
+<li><strong>Confirmed:</strong> syllabus = L1–L12 above; your real state: 47/67 assignments solved, 3/9 quizzes, Contest 2 partially solved.</li>
+<li><strong>NOT in any dump (through 23 Oct):</strong> an announced paper pattern, marks, duration, or venue for PSP IA-1. Students asked for the &quot;finalized IA1 syllabus and paper pattern for all 5 subjects&quot; on 17 Oct; only syllabuses were posted.</li>
+<li>Sibling facts (real, from the same channel): Math-1 IA-1 was announced as <strong>a written paper</strong>; AP IA-1 ran as a <strong>S-VYASA written paper</strong> (5×3M + 3×5M choice, 2 h, no calculator); PSP and other contests ran <strong>on Athena, 9:00–11:00 AM</strong>.</li>
+</ul>
+<p class='gap'></p>
+<h3>Protocol — be ready for BOTH shapes of paper</h3>
+<p class='gap'></p>
+<p><strong>If it is a written paper (most likely):</strong></p>
+<p>1. Write full programs, not pseudocode: correct indentation, <code>:</code> after <code>if</code>/<code>for</code>/<code>while</code>/<code>def</code>, <code>print(...)</code> with commas where asked.</p>
+<p>2. Read-aloud rule: before writing, say the exact output string in quotes. Spelling/case is marks (<code>&quot;Yes&quot;</code> not <code>&quot;YES&quot;</code> unless the statement says YES).</p>
+<p>3. Order: do L11/L12 loop-writing and L4–L6 conditionals first (they are your 100 recent assignments), functions last (they take longest to write cleanly).</p>
+<p>4. Every loop question: run the sample input on paper once, line by line, before you move on.</p>
+<p class='gap'></p>
+<p><strong>If it is an MCQ/online test on Athena:</strong></p>
+<p>1. Trace-before-answer: write the variable table for loops (<code>i</code>, <code>x</code>) — that is how every quiz question in this course was written.</p>
+<p>2. Check whether the paper states negative marking. If it does not, attempt everything; if it does, still attempt anything you can half-solve — but follow the printed rule exactly.</p>
+<p>3. Never leave a blank on a written section.</p>
+<p class='gap'></p>
+<p><strong>Desk order (both shapes):</strong> 60-second morning card (Part 6) → loop patterns (Part 2, types 9–13) → condition ladder patterns (types 4–6) → solutions you have not re-read (Part 3).</p>
+<p class='gap'></p>
+</section><hr>
+<p class='gap'></p>
+<section><h2>PART 1 — CONCEPT COURSE, L1 → L12</h2>
+<p class='gap'></p>
+<h3>L1 — Flowcharts</h3>
+<ul>
+<li><strong>What:</strong> a diagram of the program: oval = start/end, parallelogram = input/output, rectangle = process, diamond = decision, arrows = flow.</li>
+<li><strong>Exam form:</strong> &quot;draw a flowchart for…&quot; or &quot;what shape is the decision box?&quot; — answer: <strong>diamond</strong> for decisions, <strong>rectangle</strong> for assignments, <strong>parallelogram</strong> for input/output, <strong>oval</strong> for terminal.</li>
+<li><strong>Gotcha:</strong> arrows must show a loop going back, and every diamond has exactly two labelled exits (Yes/No or True/False).</li>
+<li><strong>Tested in:</strong> PSP Contest 1 syllabus announcement (Flowchart was question 1 of the syllabus list, 1 Sep).</li>
+</ul>
+<p class='gap'></p>
+<h3>L2 — Variables, datatypes, typecasting</h3>
+<pre>
+x = 10            # int
+
+pi = 3.14         # float
+
+name = &quot;Arush&quot;    # str
+
+flag = True       # bool
+
+n = int(&quot;42&quot;)     # str -&gt; int (typecast)
+
+f = float(&quot;3.5&quot;)  # str -&gt; float
+
+s = str(99)       # int -&gt; str
+
+type(x)           # &lt;class &#x27;int&#x27;&gt;
+
+</pre>
+<ul>
+<li><strong>Gotchas:</strong> <code>input()</code> ALWAYS returns a string — <code>n = input()</code> then <code>n + 1</code> crashes (<code>str + int</code>). Integer division <code>//</code>, remainder <code>%</code>. <code>int(&quot;3.7&quot;)</code> crashes — use <code>float</code> first.</li>
+<li><strong>Tested in:</strong> quizzes &quot;Print function…Python Variable…Type() function&quot; (2 Sep), assignments Swap Two Variables, Find The Square, Integer Type.</li>
+</ul>
+<p class='gap'></p>
+<h3>L3 — Input and arithmetic operators</h3>
+<pre>
+a = int(input())
+
+b = int(input())
+
+print(a + b, a - b, a * b, a / b, a // b, a % b, a ** 2)
+
+</pre>
+<ul>
+<li><strong>Gotchas:</strong> precedence is <code>**</code> &gt; <code>* / // %</code> &gt; <code>+ -</code>. <code>/</code> always float (<code>7/2 = 3.5</code>), <code>//</code> floors. Two inputs on ONE line: <code>l, r = map(int, input().split())</code>.</li>
+<li><strong>Tested in:</strong> Swap Two Variables (60/60), Rectangle Area, Energy Consumption, Celsius to Fahrenheit, Convert Minute to Hour, Compound Interest, Contest-2 &quot;Find the remainder&quot;.</li>
+</ul>
+<p class='gap'></p>
+<h3>L4 — if–else</h3>
+<pre>
+if condition:
+
+    # runs when True
+
+else:
+
+    # runs when False
+
+</pre>
+<ul>
+<li><strong>Gotchas:</strong> the <code>:</code> is required; indentation defines the block (4 spaces); <code>==</code> compares, <code>=</code> assigns; condition can be a comparison directly (<code>if n % 2 == 0:</code>).</li>
+<li><strong>Tested in:</strong> Even or Odd Checker, Who is Greater?, Weather Report, AM_PM, Identify Square or Rectangle, Profit or Loss; quiz &quot;Conditional Statements, Python if-else&quot; (9 Sep, you scored 8/8).</li>
+</ul>
+<p class='gap'></p>
+<h3>L5 — if–elif–else ladder</h3>
+<pre>
+if score &gt;= 90:
+
+    grade = &quot;A+&quot;
+
+elif score &gt;= 75:
+
+    grade = &quot;A&quot;
+
+elif score &gt;= 60:
+
+    grade = &quot;B&quot;
+
+else:
+
+    grade = &quot;C&quot;
+
+</pre>
+<ul>
+<li><strong>Gotchas:</strong> only ONE branch runs; <code>elif</code> not <code>else if</code>; order matters — put the strictest/highest condition first; last branch can be bare <code>else</code>.</li>
+<li><strong>Tested in:</strong> Grade Calculator, The Number Detective, FizzBuzz II, Income Tax, Electricity Bill, Triangle Type, Library fine, Salary, BMI; Contest-2 &quot;The Gatekeeper&quot; and &quot;Function Based Calculator&quot;; quiz &quot;If-elif-else ladder&quot; (21 Sep, 0/8 — unattempted).</li>
+</ul>
+<p class='gap'></p>
+<h3>L6 — Nested if–else</h3>
+<pre>
+if a + b &gt; c:
+
+    if a + c &gt; b:
+
+        if b + c &gt; a:
+
+            print(&quot;Triangle valid&quot;)
+
+        else:
+
+            print(&quot;Invalid&quot;)
+
+else:
+
+    print(&quot;Invalid&quot;)
+
+</pre>
+<ul>
+<li><strong>Gotchas:</strong> every inner <code>if</code> needs its own <code>:</code> and indentation level; <code>and</code>/<code>or</code> (L9) can flatten nesting — but the syllabus wants you to be able to read BOTH forms.</li>
+<li><strong>Tested in:</strong> Can It Be a Triangle?, Leap Year Checker, Roller Coaster, Accommodation Decision, Find the Smallest/Biggest; quizzes &quot;Python Function, Nested if-else&quot; (23 Sep, 0/14).</li>
+</ul>
+<p class='gap'></p>
+<h3>L7 — Introduction to functions</h3>
+<pre>
+def average(a, b, c):
+
+    return (a + b + c) / 3
+
+
+
+print(average(80, 90, 70))
+
+</pre>
+<ul>
+<li><strong>What:</strong> <code>def name(params): body</code> — define once, call anywhere after it. <code>return</code> sends a value out; <code>print</code> only shows it.</li>
+<li><strong>Gotchas:</strong> the function does NOTHING until called; <code>return</code> with no value gives <code>None</code>; a function without <code>return</code> cannot be used in an expression.</li>
+<li><strong>Tested in:</strong> Calculate Percentage Using Function, Percentage-1/-2, Average of Three; workbook Units 1–7.</li>
+</ul>
+<p class='gap'></p>
+<h3>L8 — Function with if–else</h3>
+<pre>
+def get_grade(m1, m2, m3):
+
+    if m1 &lt; 40 or m2 &lt; 40 or m3 &lt; 40:
+
+        return &quot;Fail&quot;
+
+    pct = (m1 + m2 + m3) / 300 * 100
+
+    if pct &gt;= 90:
+
+        return &quot;A+&quot;
+
+    # ...
+
+</pre>
+<ul>
+<li><strong>Gotchas:</strong> <code>return</code> exits immediately — no code after it runs; decide return TYPE (string vs number) from the statement, not from how you tested.</li>
+<li><strong>Tested in:</strong> Subject Grades, Smart Conditional Calculator, Grade Report (Contest 2 — in Part 3); quiz &quot;Python Function…Arguments and parameter, Return&quot; (28 Sep, 8/8 — your best score).</li>
+</ul>
+<p class='gap'></p>
+<h3>L9 — Logical operators + functions with nested if–else</h3>
+<pre>
+if a &gt; b and b &gt; c:      # both must be True
+
+if x == 1 or x == 2:     # either True
+
+if not flag:             # flips True/False
+
+</pre>
+<ul>
+<li><strong>Gotchas:</strong> <code>and</code>/<code>or</code>/<code>not</code> (words — never <code>&amp;&amp;</code>/<code>||</code>); short-circuit: <code>x != 0 and 10/x &gt; 1</code> never divides by zero when <code>x == 0</code>; precedence: <code>not</code> &gt; <code>and</code> &gt; <code>or</code>.</li>
+<li><strong>Tested in:</strong> Voter Eligibility, Greater or Equal, NST Library, Museum Booking, Greater of Four; Contest-2 Gatekeeper; assignment sets due 5 Oct (logical operators).</li>
+</ul>
+<p class='gap'></p>
+<h3>L10 — Function with recursive thinking</h3>
+<pre>
+def factorial(n):
+
+    if n &lt;= 1:        # BASE CASE — without it: infinite recursion / crash
+
+        return 1
+
+    return n * factorial(n - 1)
+
+
+
+def sum_to(n):
+
+    if n &lt;= 0:
+
+        return 0
+
+    return n + sum_to(n - 1)
+
+</pre>
+<ul>
+<li><strong>What:</strong> a function that calls itself with a SMALLER input, until a base case stops it.</li>
+<li><strong>Gotchas:</strong> every recursion needs a base case; each call multiplies stack frames (deep recursion hits the limit); trace with a call tree on paper.</li>
+<li><strong>Tested in:</strong> workbook Unit 12 (Recursion Made Easy), sum_to / sign / factorial patterns in Slack sheets; &quot;Factorial-Loops&quot; and &quot;Is It Prime?&quot; carry Recursion in their topic tags (Part 3 has loop versions — both forms examinable).</li>
+</ul>
+<p class='gap'></p>
+<h3>L11 — For loop</h3>
+<pre>
+for i in range(1, n + 1):   # 1..n inclusive
+
+    print(i * i)
+
+for i in range(n):          # 0..n-1
+
+    ...
+
+for ch in &quot;abc&quot;:            # iterate a string
+
+    ...
+
+</pre>
+<ul>
+<li><strong>Gotchas:</strong> <code>range(a, b)</code> stops at <code>b-1</code>; <code>range(n)</code> starts at 0; accumulating needs <code>total = 0</code> BEFORE the loop (a <code>total = 0</code> inside prints the last value only); print-on-same-line vs newline: <code>print(x, end=&quot; &quot;)</code>.</li>
+<li><strong>Tested in:</strong> Sum 1 to N, Multiplication Table, Print all divisors, Multiples of 3 and 5, Squares I/II, Count Divisible by 3 or 5, Fibonacci, Odd Factors, First Number Divisibly by 7 (Part 3).</li>
+</ul>
+<p class='gap'></p>
+<h3>L12 — While loop</h3>
+<pre>
+n = int(input())
+
+while n &gt; 0:
+
+    digit = n % 10      # take last digit
+
+    n //= 10            # drop last digit
+
+</pre>
+<ul>
+<li><strong>What:</strong> repeats while the condition stays True — use when you don&#x27;t know how many iterations (digit counting, reversing, searching).</li>
+<li><strong>Gotchas:</strong> you must CHANGE something the condition depends on, or it loops forever; <code>break</code> exits the loop, <code>continue</code> skips to the next check; <code>while True</code> + <code>break</code> is legal.</li>
+<li><strong>Tested in:</strong> Count the Digits, Reverse a Number, Digit Sum, First+Last Digit, Even/Odd digit counts, Largest/Smallest Digit, Armstrong, Palindrome number, All Digits Same, Check if Rare, Perfect Number (all in Part 3); quizzes &quot;While loop&quot; (12 Oct, 0/10), &quot;Control flow, Break, Continue&quot; (16 Oct, 0/8).</li>
+</ul>
+<p class='gap'></p>
+</section><hr>
+<p class='gap'></p>
+<section><h2>PART 2 — PATTERN LIBRARY (the 13 archetypes every question in this course is made of)</h2>
+<p class='gap'></p>
+<p>Copy the skeleton, fill the blanks. Question names are the real ones from your portal.</p>
+<p class='gap'></p>
+<h3>TYPE 1 — Print pattern (L1/print) — *Mirror Triangle, Inverted Triangle, Numbers Triangle, Hollow Square, No Time to Newline*</h3>
+<pre>
+n = 5
+
+for i in range(1, n + 1):
+
+    print(&quot;*&quot; * i)                 # left-aligned triangle
+
+for i in range(n, 0, -1):
+
+    print(&quot;*&quot; * i)                 # inverted
+
+for i in range(1, n + 1):
+
+    print(&quot; &quot; * (n - i) + &quot;*&quot; * i)  # mirror (right-aligned)
+
+</pre>
+<p class='gap'></p>
+<h3>TYPE 2 — Input + conversion formula (L3) — *Celsius→Fahrenheit, Rectangle Area, Energy, Minute→Hour, Compound Interest, BMI*</h3>
+<pre>
+c = float(input())
+
+print(c * 9 / 5 + 32)          # exact string as sample says
+
+h, m = divmod(total_min, 60)   # or: h = total_min // 60; m = total_min % 60
+
+</pre>
+<p class='gap'></p>
+<h3>TYPE 3 — Two-branch classify (L4) — *Even/Odd, Profit/Loss, Weather, AM/PM, Square/Rectangle*</h3>
+<pre>
+if n % 2 == 0:
+
+    print(&quot;Even&quot;)
+
+else:
+
+    print(&quot;Odd&quot;)
+
+</pre>
+<p class='gap'></p>
+<h3>TYPE 4 — Ladder with thresholds (L5) — *Grade Calculator, Income Tax, Electricity Bill, BMI, Library Fine, Salary*</h3>
+<pre>
+if x &lt; a:        ...
+
+elif x &lt; b:      ...   # always ascending thresholds
+
+elif x &lt; c:      ...
+
+else:            ...
+
+</pre>
+<p><strong>Rule:</strong> write the boundaries in strictly increasing order; test the boundary value itself (exactly 75, exactly 40).</p>
+<p class='gap'></p>
+<h3>TYPE 5 — Nested validation (L6) — *Can It Be a Triangle, Leap Year, Roller Coaster, Accommodation*</h3>
+<pre>
+if a + b &gt; c and a + c &gt; b and b + c &gt; a:   # or 3 nested ifs (syllabus L6 style)
+
+    print(&quot;YES&quot;)
+
+else:
+
+    print(&quot;NO&quot;)
+
+
+
+# leap year: divisible by 4, but century years only if divisible by 400
+
+if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
+
+    print(&quot;Leap&quot;)
+
+</pre>
+<p class='gap'></p>
+<h3>TYPE 6 — Function + decision (L8) — *Subject Grades, Smart Calculator, Grade Report*</h3>
+<pre>
+def solve(...):
+
+    if &lt;fail condition&gt;:
+
+        return &lt;fail value&gt;
+
+    # compute
+
+    return &lt;answer&gt;
+
+# no input()/print() in the function unless the statement says so
+
+</pre>
+<p class='gap'></p>
+<h3>TYPE 7 — Logical eligibility (L9) — *Voter Eligibility, Gatekeeper, NST Library, Museum Booking*</h3>
+<pre>
+if u == &quot;admin&quot; and p == &quot;password123&quot;:
+
+    print(&quot;Login successful&quot;)
+
+elif u == &quot;admin&quot; or p == &quot;password123&quot;:   # exactly one matches
+
+    print(&quot;Check username or password&quot;)
+
+else:
+
+    print(&quot;Invalid credentials&quot;)
+
+</pre>
+<p class='gap'></p>
+<h3>TYPE 8 — Recursion (L10) — *sum_to, factorial, sign, recursion in workbook Unit 12*</h3>
+<pre>
+def f(n):
+
+    if n &lt; 2:            # base case FIRST
+
+        return ...
+
+    return ... f(n - 1)
+
+</pre>
+<p class='gap'></p>
+<h3>TYPE 9 — For-loop accumulate (L11) — *Sum 1..N, divisors, multiples, table, squares, Fibonacci*</h3>
+<pre>
+total = 0                      # BEFORE the loop — classic bug if inside
+
+for i in range(1, n + 1):
+
+    if condition(i):
+
+        total += i
+
+print(total)
+
+</pre>
+<p class='gap'></p>
+<h3>TYPE 10 — For-loop build a string/list, then print (L11) — *Squares II, Count Divisible by 3 or 5, Fibonacci, Odd Factors*</h3>
+<pre>
+out = []
+
+for i in range(1, n + 1):
+
+    if cond(i):
+
+        out.append(str(i))
+
+print(&quot; &quot;.join(out))           # one line, space-separated
+
+</pre>
+<p class='gap'></p>
+<h3>TYPE 11 — While digit-extraction (L12) — *Count digits, Reverse, Digit sum, First+last, Even/odd counts, Largest digit, Add 1 to each digit, Armstrong*</h3>
+<pre>
+n = int(input())
+
+while n &gt; 0:
+
+    d = n % 10        # last digit
+
+    ...               # use d
+
+    n //= 10          # drop it
+
+</pre>
+<p><strong>One template, 8 questions.</strong> Variants: count (<code>c += 1</code>), sum (<code>s += d</code>), reverse (<code>r = r * 10 + d</code>), max (<code>if d &gt; m: m = d</code>), first digit (strip until <code>n &lt; 10</code>), add-1 (<code>nd = (d + 1) % 10</code> — 9 becomes 0).</p>
+<p class='gap'></p>
+<h3>TYPE 12 — While + break early-exit (L12, L9) — *First Number Divisibly by 7, Check if All Digits are Same, Check if Rare*</h3>
+<pre>
+found = None
+
+for i in range(l, l + 7):        # at most 7 candidates — even if R is 10^18
+
+    if i % 7 == 0:
+
+        found = i
+
+        break
+
+print(found if found else &quot;NOT FOUND&quot;)
+
+</pre>
+<p class='gap'></p>
+<h3>TYPE 13 — Number theory with loop (L11/L12) — *Is It Prime?, Perfect Number, Palindrome number*</h3>
+<pre>
+# prime: check only up to sqrt(n)
+
+i = 2
+
+while i * i &lt;= n:
+
+    if n % i == 0:
+
+        break
+
+    i += 1
+
+# palindrome: reverse and compare, or compare str to str[::-1] if strings allowed
+
+</pre>
+<p class='gap'></p>
+</section><hr>
+<p class='gap'></p>
+<section><h2>PART 3 — SOLVED COUNTER (your 23 unsolved questions, all solved and sample-verified)</h2>
+<p class='gap'></p>
+<p><strong>53/53 sample checks pass</strong> (every sample case in every statement was run — verified 28 Oct). Statements quoted verbatim where it matters (exact output strings, constraints).</p>
+<p class='gap'></p>
+<h3>C-1. The Gatekeeper — Contest 2, medium, 0/80 (if-elif-else ladder)</h3>
+<p>&gt; &quot;The correct username is <code>admin</code>. The correct password is <code>password123</code>.&quot; Print <code>Login successful</code> if both correct; <code>Check username or password</code> if exactly one correct; <code>Invalid credentials</code> if both wrong.</p>
+<pre>
+u = input().strip()
+
+p = input().strip()
+
+ok_u = (u == &quot;admin&quot;)
+
+ok_p = (p == &quot;password123&quot;)
+
+if ok_u and ok_p:
+
+    print(&quot;Login successful&quot;)
+
+elif ok_u or ok_p:
+
+    print(&quot;Check username or password&quot;)
+
+else:
+
+    print(&quot;Invalid credentials&quot;)
+
+</pre>
+<p>Samples: <code>admin/password123 → Login successful</code>; <code>admin/wrongpass → Check username or password</code>. *(Note: the statement&#x27;s em-dashes are punctuation — samples show plain strings.)*</p>
+<p class='gap'></p>
+<h3>C-2. Newton and Rounding — Contest 2, hard, 0/120 (arithmetic operators)</h3>
+<p>&gt; Round n to nearest multiple of 10. Ends with 0 → same. Last digit 1–4 → lower. 6–9 → higher. <strong>Last digit 5 → always LOWER.</strong></p>
+<pre>
+n = int(input())
+
+d = n % 10
+
+if d &lt;= 5:
+
+    print(n - d)        # 0,1,2,3,4,5 all go DOWN (5 is the trap)
+
+else:
+
+    print(n + (10 - d))
+
+</pre>
+<p>Samples: <code>5 → 0</code> · <code>113 → 110</code> · <code>2359 → 2360</code>. Also checked: <code>0 → 0</code>, <code>10 → 10</code>.</p>
+<p class='gap'></p>
+<h3>C-3. Grade Report — Contest 2, medium, 0/80 (functions)</h3>
+<p>&gt; Complete <code>def get_grade(mark1, mark2, mark3)</code>. Any subject &lt; 40 → return <code>Fail</code>. Else percentage of 300: ≥90 → <code>A+</code>, 75–&lt;90 → <code>A</code>, 60–&lt;75 → <code>B</code>, 40–&lt;60 → <code>C</code>. Return only — no input/print.</p>
+<pre>
+def get_grade(mark1, mark2, mark3):
+
+    if mark1 &lt; 40 or mark2 &lt; 40 or mark3 &lt; 40:
+
+        return &quot;Fail&quot;
+
+    pct = (mark1 + mark2 + mark3) / 300 * 100
+
+    if pct &gt;= 90:
+
+        return &quot;A+&quot;
+
+    if pct &gt;= 75:
+
+        return &quot;A&quot;
+
+    if pct &gt;= 60:
+
+        return &quot;B&quot;
+
+    return &quot;C&quot;
+
+</pre>
+<p>Samples: <code>95,92,88 → A+</code> (91.7%) · <code>80,90,70 → A</code> (80%) · <code>75,35,80 → Fail</code>.</p>
+<p class='gap'></p>
+<h3>C-4. Count Numbers Divisible by 3 or 5 — 0/20 (for loop)</h3>
+<p>&gt; Print all i in 1..N divisible by 3 or 5 <strong>but not both</strong> (XOR). <code>3≤N≤100</code>. Sample: <code>15 → 3 5 6 9 10 12</code>.</p>
+<pre>
+n = int(input())
+
+out = []
+
+for i in range(1, n + 1):
+
+    if (i % 3 == 0) ^ (i % 5 == 0):     # XOR: exactly one of them
+
+        out.append(str(i))
+
+print(&quot; &quot;.join(out))
+
+</pre>
+<p class='gap'></p>
+<h3>C-5. Squares from 1 to N (Part I) — 0/20 (for loop)</h3>
+<p>&gt; Print squares 1²..N², <strong>one per line</strong>. <code>1≤N≤20</code>.</p>
+<pre>
+n = int(input())
+
+for i in range(1, n + 1):
+
+    print(i * i)
+
+</pre>
+<p class='gap'></p>
+<h3>C-6. Squares from 1 to N (Part II) — 0/20 (for loop)</h3>
+<p>&gt; Same squares <strong>on one line, space-separated</strong>. Sample: <code>5 → 1 4 9 16 25</code>.</p>
+<pre>
+n = int(input())
+
+print(&quot; &quot;.join(str(i * i) for i in range(1, n + 1)))
+
+</pre>
+<p>(If generators are banned in your environment: build a list with <code>append</code> first — TYPE 10.)</p>
+<p class='gap'></p>
+<h3>C-7. Factorial-Loops — 0/20 (loops/recursion)</h3>
+<p>&gt; N! for <code>0≤N≤20</code>. <code>0! = 1</code>.</p>
+<pre>
+n = int(input())
+
+f = 1
+
+for i in range(2, n + 1):
+
+    f *= i
+
+print(f)
+
+</pre>
+<p>Samples: <code>5 → 120</code>, <code>10 → 3628800</code>, <code>0 → 1</code>.</p>
+<p class='gap'></p>
+<h3>C-8. Check if a Number is a Palindrome — 0/20 (while/recursion)</h3>
+<p>&gt; &quot;reads same backwards and forwards&quot;. Sample: <code>54145 → Yes</code>, <code>12345 → No</code>.</p>
+<pre>
+n = int(input())
+
+s = str(n)
+
+print(&quot;Yes&quot; if s == s[::-1] else &quot;No&quot;)
+
+</pre>
+<p>Loop version (if strings blocked, as in &quot;Count the Digits&quot;): reverse the number with TYPE 11 and compare <code>r == original</code>.</p>
+<p class='gap'></p>
+<h3>C-9. Digit Sum using Loop — 0/20 (function only)</h3>
+<p>&gt; <code>sumOfDigits(n)</code> must <strong>return</strong> the sum. <code>28393 → 25</code>.</p>
+<pre>
+def sumOfDigits(n):
+
+    s = 0
+
+    while n &gt; 0:
+
+        s += n % 10
+
+        n //= 10
+
+    return s
+
+</pre>
+<p class='gap'></p>
+<h3>C-10. Count the Digits — 0/20 (while)</h3>
+<p>&gt; <strong>Blocked in backend:</strong> string literals, list literals, <code>str()</code>/<code>list()</code> conversions, indexing/iteration/string methods on <code>input()</code>. So pure arithmetic. <code>28232 → 5</code>.</p>
+<pre>
+n = int(input())
+
+c = 0
+
+while n &gt; 0:
+
+    c += 1
+
+    n //= 10
+
+print(c)
+
+</pre>
+<p class='gap'></p>
+<h3>C-11. Reverse a Number — 0/20 (while)</h3>
+<p>&gt; <code>536446 → 644635</code>; <code>100 → 1</code> (no trailing zeros kept).</p>
+<pre>
+n = int(input())
+
+r = 0
+
+while n &gt; 0:
+
+    r = r * 10 + n % 10
+
+    n //= 10
+
+print(r)
+
+</pre>
+<p class='gap'></p>
+<h3>C-12. Sum of First and Last Digits — 0/20 (while)</h3>
+<p>&gt; <code>14368 → 9</code> (1 + 8).</p>
+<pre>
+n = int(input())
+
+last = n % 10
+
+while n &gt;= 10:
+
+    n //= 10          # n is now the first digit
+
+print(n + last)
+
+</pre>
+<p><strong>Edge (no sample given):</strong> single digit 7 → first = last = 7 → literal reading gives <strong>14</strong>. Keep the literal formula; if the judge disagrees on that one edge, it is the only unverifiable case in this file.</p>
+<p class='gap'></p>
+<h3>C-13. Find the Count of Even and Odd Digits — 0/20 (while)</h3>
+<p>&gt; <code>295892 → 3 3</code> (even count first, then odd, space-separated).</p>
+<pre>
+n = int(input())
+
+e = o = 0
+
+while n &gt; 0:
+
+    d = n % 10
+
+    if d % 2 == 0:
+
+        e += 1
+
+    else:
+
+        o += 1
+
+    n //= 10
+
+print(e, o)
+
+</pre>
+<p class='gap'></p>
+<h3>C-14. Find the Largest Digit in a Number — 0/40 (while)</h3>
+<p>&gt; <code>2839 → 9</code>. <strong><code>0≤N≤10^9</code> — N can be 0</strong> (sample-free edge: print 0).</p>
+<pre>
+n = int(input())
+
+m = 0
+
+while n &gt; 0:
+
+    d = n % 10
+
+    if d &gt; m:
+
+        m = d
+
+    n //= 10
+
+print(m)
+
+</pre>
+<p>(Works for N = 0: loop never runs, prints 0.)</p>
+<p class='gap'></p>
+<h3>C-15. Is It Prime? — 0/20 (loops)</h3>
+<p>&gt; Print exactly <code>YES</code> / <code>NO</code>. <code>1</code> is NOT prime. <code>7 → YES</code>, <code>10 → NO</code>.</p>
+<pre>
+n = int(input())
+
+if n &lt; 2:
+
+    print(&quot;NO&quot;)
+
+else:
+
+    i = 2
+
+    prime = True
+
+    while i * i &lt;= n:
+
+        if n % i == 0:
+
+            prime = False
+
+            break
+
+        i += 1
+
+    print(&quot;YES&quot; if prime else &quot;NO&quot;)
+
+</pre>
+<p class='gap'></p>
+<h3>C-16. Add 1 to Each Digit — 0/20 (loops)</h3>
+<p>&gt; &quot;adding 1 to digit 9 makes it 0&quot;. <code>765392 → 876403</code>.</p>
+<pre>
+n = int(input())
+
+res = 0
+
+mul = 1
+
+while n &gt; 0:
+
+    d = (n % 10 + 1) % 10     # 9 -&gt; 0, others -&gt; +1
+
+    res += d * mul
+
+    mul *= 10
+
+    n //= 10
+
+print(res)
+
+</pre>
+<p>Edge: <code>9 → 0</code> (leading zeros vanish when printed as an integer — matches &quot;print an integer&quot;).</p>
+<p class='gap'></p>
+<h3>C-17. Fibonacci Series of a given input — 0/20 (loops)</h3>
+<p>&gt; First N terms, space-separated, starting <strong>0 1 1 2 3</strong>. <code>5 → 0 1 1 2 3</code>. <code>1≤N≤20</code>.</p>
+<pre>
+n = int(input())
+
+a, b = 0, 1
+
+out = []
+
+for _ in range(n):
+
+    out.append(str(a))
+
+    a, b = b, a + b
+
+print(&quot; &quot;.join(out))
+
+</pre>
+<p class='gap'></p>
+<h3>C-18. Find Odd Factors — 0/20 (for loop)</h3>
+<p>&gt; All odd factors of N in increasing order. <code>21 → 1 3 7 21</code>. <code>1≤N≤10^5</code>.</p>
+<pre>
+n = int(input())
+
+out = []
+
+for i in range(1, n + 1):
+
+    if n % i == 0 and i % 2 == 1:
+
+        out.append(str(i))
+
+print(&quot; &quot;.join(out))
+
+</pre>
+<p>(1 is always included — the sample confirms it.)</p>
+<p class='gap'></p>
+<h3>C-19. Check if Even Sum is Divisible by 2 — 0/20 (while/loop)</h3>
+<p>&gt; Sum all EVEN numbers in [L, R], print <code>Yes</code> if that sum % 2 == 0 else <code>No</code>. <strong><code>1≤L≤R≤10^18</code> — you CANNOT loop the range.</strong></p>
+<pre>
+l, r = map(int, input().split())
+
+first = l if l % 2 == 0 else l + 1
+
+last  = r if r % 2 == 0 else r - 1
+
+if first &gt; last:
+
+    s = 0
+
+else:
+
+    k = (last - first) // 2 + 1          # count of evens
+
+    s = k * (first + last) // 2          # arithmetic-series sum
+
+print(&quot;Yes&quot; if s % 2 == 0 else &quot;No&quot;)
+
+</pre>
+<p>Sample: <code>23 29 → Yes</code> (24+26+28 = 78). Also checked: no evens in range → sum 0 → <code>Yes</code>; L=R=10^18 → <code>Yes</code>.</p>
+<p class='gap'></p>
+<h3>C-20. Check for Perfect Number — 0/20 (while)</h3>
+<p>&gt; Sum of PROPER divisors (excluding N) equals N. <code>6 → True</code> (1+2+3). Print <code>True</code>/<code>False</code>.</p>
+<pre>
+n = int(input())
+
+s = 0
+
+i = 1
+
+while i * i &lt;= n:
+
+    if n % i == 0:
+
+        if i != n:
+
+            s += i
+
+        other = n // i
+
+        if other != i and other != n:
+
+            s += other
+
+    i += 1
+
+print(&quot;True&quot; if s == n else &quot;False&quot;)
+
+</pre>
+<p>Checked: <code>6 → True</code>, <code>28 → True</code>, <code>10 → False</code>.</p>
+<p class='gap'></p>
+<h3>C-21. First Number Divisibly by 7 — 0/20 (for + break)</h3>
+<p>&gt; Smallest multiple of 7 in [L, R], else <code>NOT FOUND</code>. <strong><code>R</code> up to 10^18 — but only 7 candidates can matter.</strong></p>
+<pre>
+l, r = map(int, input().split())
+
+ans = &quot;NOT FOUND&quot;
+
+for i in range(l, min(r, l + 6) + 1):
+
+    if i % 7 == 0:
+
+        ans = str(i)
+
+        break
+
+print(ans)
+
+</pre>
+<p>Samples: <code>23 29 → 28</code> · <code>23 27 → NOT FOUND</code> · exact <code>7 7 → 7</code> · huge range ending 10^18 → <code>999999999999999999</code> (10^18 ≡ 1 mod 7).</p>
+<p class='gap'></p>
+<h3>C-22. Check if All Digits are Same — 0/40 (while + break)</h3>
+<p>&gt; <code>77777 → Yes</code>, <code>22888 → No</code>.</p>
+<pre>
+n = int(input())
+
+first = n % 10
+
+ok = True
+
+while n &gt; 0:
+
+    if n % 10 != first:
+
+        ok = False
+
+        break
+
+    n //= 10
+
+print(&quot;Yes&quot; if ok else &quot;No&quot;)
+
+</pre>
+<p class='gap'></p>
+<h3>C-23. Check if Rare — 0/40 (while + break)</h3>
+<p>&gt; &quot;rare if all of its digits are divisible by X&quot;. Input <code>N X</code>. <code>28 2 → True</code>.</p>
+<pre>
+n, x = map(int, input().split())
+
+ok = True
+
+while n &gt; 0:
+
+    if (n % 10) % x != 0:
+
+        ok = False
+
+        break
+
+    n //= 10
+
+print(&quot;True&quot; if ok else &quot;False&quot;)
+
+</pre>
+<p>Checked: <code>28 3 → False</code>.</p>
+<p class='gap'></p>
+</section><hr>
+<p class='gap'></p>
+<section><h2>PART 4 — DRILL INDEX (what exists, what is done, what is left)</h2>
+<p class='gap'></p>
+<h3>4.1 Your 9 quizzes (portal state, captured 28 Oct) — 3/9 solved</h3>
+<p class='gap'></p>
+<p>| Quiz | Window / date | Score | Revise with |</p>
+<p>|---|---|---|---|</p>
+<p>| Print function, Comments, Variable, Primitive, <code>type()</code> | 2 Sep | <strong>0/12</strong> | L2 · assignments: Swap Two Variables, Find The Square, Integer Type |</p>
+<p>| Input, Arithmetic operators, precedence | 7 Sep | 2/26 | L3 · Rectangle Area, Energy, C→F, Minute→Hour |</p>
+<p>| Conditional Statements, if-else | 9 Sep | <strong>8/8 ✓</strong> | L4 — your strongest area |</p>
+<p>| If-elif-else ladder | 21 Sep | <strong>0/8</strong> | L5 · Grade Calculator, Income Tax, Electricity Bill, Triangle Type |</p>
+<p>| Python Function, Nested if-else | 23 Sep | <strong>0/14</strong> | L6–L7 · Can It Be a Triangle?, Leap Year, Subject Grades |</p>
+<p>| Function, Nested if-else, Arguments, Return | 28 Sep | <strong>8/8 ✓</strong> | L8 — keep this level |</p>
+<p>| Iteration, Recursion, Range | 12 Oct | <strong>0/14</strong> | L10–L11 · TYPE 8 + TYPE 9/10 patterns |</p>
+<p>| While loop | 12 Oct | <strong>0/10</strong> | L12 · all of Part 3 C-9…C-14 |</p>
+<p>| Control flow, Loops, Break, Continue | 16 Oct | <strong>0/8</strong> | L11–L12 · TYPE 12 (Div7, All Same, Rare) |</p>
+<p class='gap'></p>
+<p><strong>Question text for the unattempted quizzes is NOT in any file</strong> — the portal only shows questions after starting a test (forbidden by the rules of this project). Revise by pattern, not by past paper.</p>
+<p class='gap'></p>
+<h3>4.2 Assignment sets solved (the 47 you have done — quick re-read list by date)</h3>
+<p class='gap'></p>
+<ul>
+<li><strong>8 Sep (L2):</strong> Print Mirror Right Angle Triangle · Print Inverted Triangle · Print Numbers Right-Angled Triangle · Print Hollow Square · No Time to Newline *(all 10/20)*</li>
+<li><strong>12 Sep (L3):</strong> Swap Two Variables (60/60) · Find The Square · Rectangle Area Calculator · Calculate and Print Age · Energy Consumption · C→F Conversion · Minute→Hour Format</li>
+<li><strong>14 Sep (L4):</strong> Average of Three · Compound Interest −1 · Even or Odd · Integer Type · Who is Greater? · Weather Report · AM_PM · Identify Square or Rectangle</li>
+<li><strong>21 Sep (L4–L5):</strong> Absolute Difference · Profit or Loss · Voter Eligibility II · Grade Calculator · The Number Detective · Greater or Equal</li>
+<li><strong>26 Sep (L5):</strong> FizzBuzz II · Income Tax (40/40) · Electricity Bill (partial 30/60) · Triangle Type · All Three Equal · Find the Biggest! · Library fine · Calculate salary · Check Profit or Loss · BMI-1</li>
+<li><strong>28 Sep (L6):</strong> Can It Be a Triangle? · Leap Year (40/40) · Roller Coaster · Accommodation Decision · Tax by Age &amp; Income · Find the Smallest!</li>
+<li><strong>3–5 Oct (L7–L9):</strong> Percentage Using Function · Percentage-1/-2 · Greater/Smaller ×2 · Greater of Three · Subject Grades · Bridge Between Villages · Electricity Bill-2 · Smart Conditional Calculator · C→F-2 · Leap Year or Not · Great Dragon · Function Based Calculator · NST Library (60/60) · Movie Mania · Will Ramandeep Sir Fly −2 · Bus Route · Museum Booking · Greater of Four</li>
+<li><strong>9 Oct (Contest 2):</strong> Find the remainder (40/40) · The Frame (40/40) · Function Based Calculator (80/80) · Calculate Final Price (40/80) — <strong>backlog: The Gatekeeper, Newton and Rounding, Grade Report → Part 3</strong></li>
+<li><strong>10–19 Oct (L10–L12):</strong> Palindrome with Digit Validation · NewForces Ratings (60/60) · Sum in Range L..R · Multiplication Table · Print divisors · Multiples of 3 and 5 · Find The Even Numbers · Sum 1 to N · Sum of Even/Odd Digits (40/40) · Smallest Digit (40/40) · Armstrong II (40/40)</li>
+<li><strong>Not yet done (→ Part 3 has all):</strong> Count Divisible 3 or 5 · Squares I &amp; II · Factorial-Loops · Palindrome number · Digit Sum fn · Count the Digits · Reverse · First+Last · Even/Odd counts · Largest Digit · Is It Prime? · Add 1 to Each Digit · Fibonacci · Odd Factors · Even Sum %2 · Perfect Number · Div7 · All Digits Same · Check if Rare</li>
+</ul>
+<p class='gap'></p>
+<h3>4.3 Workbook — &quot;Python Functions: Practice Workbook&quot; (Slack, 19 Oct; 47 questions, 150 marks, 13 units)</h3>
+<p class='gap'></p>
+<p>Units: 1 What is a function (5) · 2 Define &amp; call (10) · 3 <code>return</code> (10) · 4 <code>print</code> (5) · 5 print vs return (15) · 6 Take a value out (10) · 7 Send values in (10) · 8 Decisions/loops inside functions (15) · 9 Functions calling functions + scope (10) · 10 Functions working together (15) · 11 Function reference (15) · 12 Recursion made easy (15) · 13 Final challenge (15).</p>
+<p><strong>Full text of all 47 questions is in <code>export/PSP-questions.md</code> (lines ~8010–8630) and its PDF.</strong> If you do only one thing from this list: Units 5, 8, 12 (print-vs-return, loops-in-functions, recursion) — they map exactly to L7–L10.</p>
+<p class='gap'></p>
+<h3>4.4 Slack standing directives (real, from #psp-26)</h3>
+<p class='gap'></p>
+<ul>
+<li><strong>2 questions/day minimum</strong> from the two Codeforces sheets (If-Else &amp; Math, 63 problems; Loops, 34 problems) — make your own copy (File → Make a copy) before ticking.</li>
+<li><strong>12-problem Codeforces code list</strong> shared 22 Oct; <strong>Ashwin&#x27;s answer key posted 27 Oct</strong> in-channel: <code>977 A, 978 B, 988 A, 996 A, 731 A, 832 A, 1800 A, 910 A, 115 A, 977 B, 1113 A, 948 A</code> (A/B suffix = which problem of each pair).</li>
+<li>Workbook PDF link is in the export&#x27;s sources section.</li>
+</ul>
+<p class='gap'></p>
+<h3>4.5 What the exam can and cannot draw from</h3>
+<p class='gap'></p>
+<p>| Source | In-file? | Count |</p>
+<p>|---|---|---|</p>
+<p>| Assignment questions (full text + status) | yes | 100 (47 solved by you) |</p>
+<p>| Contest 2 full text | yes | 7 |</p>
+<p>| In-class lecture questions (per lecture) | yes | 14 windows |</p>
+<p>| Quiz schedules + your scores | yes | 9 |</p>
+<p>| Quiz question text (unattempted) | <strong>no</strong> — needs Start Test (forbidden) | 4 quizzes |</p>
+<p>| Quiz-contest MCQs (PSP Contest 1, Wifi Demo, Mock Test) | <strong>no</strong> — same reason | 4 |</p>
+<p>| Workbook | yes, full text | 47 |</p>
+<p>| Codeforces sheets | titles + ratings only, no statements | 97 + 12 |</p>
+<p class='gap'></p>
+</section><hr>
+<p class='gap'></p>
+<section><h2>PART 5 — GAPS (honest)</h2>
+<p class='gap'></p>
+<p>1. <strong>Paper pattern, marks, duration, venue for PSP IA-1: not announced</strong> anywhere in the dumps through 23 Oct, and Slack could not be re-harvested tonight (session expired — QR re-login needed). If a classmate has a newer screenshot of the pattern, trust it over this file&#x27;s assumptions.</p>
+<p>2. <strong>Quiz question text for the 4 unattempted quizzes does not exist in any capture</strong> — starting the test to read them would consume an attempt, which this project never does.</p>
+<p>3. <strong>Single-digit edge in C-12 (First+Last digit)</strong> has no sample on the portal — literal answer 14, flagged above.</p>
+<p>4. <strong>Exact sample output formatting</strong> (trailing spaces, blank lines) was normalised to whitespace-equal comparison during verification; when in doubt on the paper, copy the sample&#x27;s spacing character-for-character.</p>
+<p>5. Physically absent data cannot be manufactured: no past IA-1 PSP paper exists in any source (IA-1 has not happened yet).</p>
+<p class='gap'></p>
+</section><hr>
+<p class='gap'></p>
+<section><h2>PART 6 — 60-SECOND MORNING CARD (screenshot this)</h2>
+<p class='gap'></p>
+<p>1. <strong><code>:</code> after <code>if</code>/<code>elif</code>/<code>else</code>/<code>for</code>/<code>while</code>/<code>def</code>. 4-space indent.</strong></p>
+<p>2. <strong><code>input()</code> is a string</strong> → <code>int(input())</code> unless told otherwise; two values: <code>a, b = map(int, input().split())</code>.</p>
+<p>3. <strong>Digit loop = one template:</strong> <code>while n &gt; 0: d = n % 10; n //= 10</code> → count/sum/reverse/max/first/odd-even/add-1 all from it.</p>
+<p>4. <strong>Accumulator starts BEFORE the loop</strong> (<code>total = 0</code> outside).</p>
+<p>5. <strong><code>range(1, n+1)</code> is 1..n; <code>range(n)</code> is 0..n-1; <code>range(n, 0, -1)</code> counts down.</strong></p>
+<p>6. <strong>Print exact strings:</strong> <code>Yes/No</code>, <code>True/False</code>, <code>YES/NO</code> — copy from the statement, never invent case.</p>
+<p>7. <strong>Prime:</strong> loop to <code>i*i &lt;= n</code>; <strong>1 is not prime</strong>; <strong>0! = 1</strong>.</p>
+<p>8. <strong>Round-half-down:</strong> last digit 5 goes DOWN (Newton and Rounding).</p>
+<p>9. <strong>Function-only questions:</strong> write <code>def</code> + <code>return</code>, no <code>input()</code>/<code>print()</code> unless asked.</p>
+<p>10. <strong>Huge ranges (10^18):</strong> never loop them — arithmetic formula (even-sum) or ≤7 candidates (div-by-7).</p>
+<p>11. <strong>Recursion:</strong> base case FIRST, then <code>return … f(n-1)</code>.</p>
+<p>12. <strong>break</strong> exits, <strong>continue</strong> skips — diamond flowchart = decision, parallelogram = input/output.</p>
+<p class='gap'></p>
+</section><hr>
+<p class='gap'></p>
+<p>*Sources: <code>export/PSP-questions.md</code> (23 Oct portal export), live portal pages captured 28 Oct (PSP B: 47/67 assignments, 3/9 quizzes), <code>materials/slack-questions/academic-announcement-26.md</code> (syllabus, 14 Oct), <code>psp-26.md</code>, <code>general-announcements-26.md</code>, <code>student-progression-batch-b.md</code>. All 23 solutions in Part 3 were executed against their portal sample cases before publication: 53/53 pass.*</p>
+<p class='gap'></p></body></html>
